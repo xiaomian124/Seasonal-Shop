@@ -1,0 +1,22 @@
+name: Seasonal-Shop
+version: 1.0
+main: com.xiaomian124.seasonalshop.SeasonalShop
+api-version: '26.3'
+author: xiaomian124
+description: 季节商店，自动检测季节及更换商店。
+softdepend: [Vault, PlayerPoints]
+
+commands:
+  seasonalshop:
+    description: 季节商店主命令
+    usage: /seasonalshop <shop|help|next|now|season|reload>
+    aliases: [ss]
+    permission: seasonalshop.use
+
+permissions:
+  seasonalshop.use:
+    description: 允许使用基础指令
+    default: true
+  seasonalshop.admin:
+    description: 允许使用管理指令
+    default: op

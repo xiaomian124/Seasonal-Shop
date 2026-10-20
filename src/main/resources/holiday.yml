@@ -1,0 +1,50 @@
+holidays:
+  CHRISTMAS:
+    name: "圣诞节"
+    month: 12
+    day: 25
+    icon: "🎄"
+    color: "dark_green"
+    glass-colors:
+      - RED_STAINED_GLASS_PANE
+      - WHITE_STAINED_GLASS_PANE
+      - GREEN_STAINED_GLASS_PANE
+  HALLOWEEN:
+    name: "万圣节"
+    month: 10
+    day: 31
+    icon: "🎃"
+    color: "gold"
+    glass-colors:
+      - ORANGE_STAINED_GLASS_PANE
+      - BLACK_STAINED_GLASS_PANE
+      - PURPLE_STAINED_GLASS_PANE
+  VALENTINE:
+    name: "情人节"
+    month: 2
+    day: 14
+    icon: "💕"
+    color: "light_purple"
+    glass-colors:
+      - PINK_STAINED_GLASS_PANE
+      - MAGENTA_STAINED_GLASS_PANE
+  NEW_YEAR:
+    name: "新年"
+    month: 1
+    day: 1
+    icon: "🎆"
+    color: "red"
+    glass-colors:
+      - YELLOW_STAINED_GLASS_PANE
+      - ORANGE_STAINED_GLASS_PANE
+      - RED_STAINED_GLASS_PANE
+  EASTER:
+    name: "复活节"
+    month: 4
+    day: 4
+    icon: "🐰"
+    color: "dark_purple"
+    glass-colors:
+      - PINK_STAINED_GLASS_PANE
+      - LIME_STAINED_GLASS_PANE
+      - LIGHT_BLUE_STAINED_GLASS_PANE

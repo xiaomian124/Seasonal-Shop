@@ -1,0 +1,7 @@
+# ===========================
+#   SeasonalShop 插件配置文件
+# ===========================
+
+# 商店商品货币，必须提供一种
+# 可选：vault / playerpoints
+currency: playerpoints

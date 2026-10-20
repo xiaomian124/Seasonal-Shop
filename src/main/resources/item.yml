@@ -1,0 +1,122 @@
+# ==========================================
+# Seasonal-Shop 商品配置文件
+# 
+# 季节商品：使用 season 字段 (SPRING / SUMMER / AUTUMN / WINTER)
+# 节日商品：使用 holiday 字段 (对应 holiday.yml 里的节点名，建议全大写)
+# ==========================================
+
+items:
+  # ==================== 春季商品 ====================
+  spring_diamond:
+    season: SPRING
+    material: DIAMOND
+    amount: 50
+    name: "&a春季钻石"
+    lore:
+      - "&7限时春季商品"
+      - "&7购买后直接发放到背包"
+    price: 500.0
+    discount: 8.0        # 8折，实际扣款 400.00
+
+  spring_fly:
+    season: SPRING
+    material: FEATHER
+    amount: 1
+    name: "&a飞行权限 (30天)"
+    lore:
+      - "&7限时春季商品"
+      - "&7购买后自动获得飞行权限"
+    price: 20.0
+    commands:
+      - "lp user {player} permission settemp essentials.fly true 30d"
+
+  # ==================== 夏季商品 ====================
+  summer_netherite:
+    season: SUMMER
+    material: NETHERITE_INGOT
+    amount: 1
+    name: "&c夏日下界合金"
+    price: 15.0
+    enchantments:
+      - "UNBREAKING:3"   # 附魔: 等级
+    attributes:
+      - "GENERIC_ARMOR:2:ADD_NUMBER" # 属性: 数值:操作类型(ADD_NUMBER/ADD_SCALAR/MULTIPLY_SCALAR_1)
+
+  # ==================== 秋季商品 ====================
+  autumn_gold:
+    season: AUTUMN
+    material: GOLD_INGOT
+    amount: 16
+    name: "&6秋日金锭"
+    price: 8.0
+
+  tp_permission:
+    season: AUTUMN
+    material: NAME_TAG
+    amount: 1
+    name: "&e传送权限（2天）"
+    price: 10
+    discount: 8        # 8折
+    lore:
+      - "&7可以在玩家之间自由传送"
+    commands:
+      - "lp user {player} permission settemp minecraft.command.teleport true 2d"
+
+  # ==================== 冬季商品 ====================
+  winter_elytra:
+    season: WINTER
+    material: ELYTRA
+    amount: 1
+    name: "&b冬日鞘翅"
+    price: 16.0
+    discount: 9.5        # 9.5折，支持小数
+
+  # ==================== 圣诞节商品 ====================
+  christmas_gift:
+    holiday: CHRISTMAS
+    material: CHEST
+    amount: 1
+    name: "&c&l圣诞礼物"
+    lore:
+      - "&7打开可以获得随机奖励"
+      - "&7节日限定"
+    price: 14.0
+    discount: 5.0        # 圣诞半价
+    commands:
+      - "give {player} diamond 5"
+      - "give {player} emerald 10"
+
+  christmas_sword:
+    holiday: CHRISTMAS
+    material: DIAMOND_SWORD
+    amount: 1
+    name: "&c&l圣诞之剑"
+    price: 30.0
+    enchantments:
+      - "SHARPNESS:8"
+      - "FIRE_ASPECT:5"
+    attributes:
+      - "GENERIC_ATTACK_DAMAGE:10:ADD_NUMBER"
+
+  # ==================== 万圣节商品 ====================
+  halloween_pumpkin:
+    holiday: HALLOWEEN
+    material: CARVED_PUMPKIN
+    amount: 1
+    name: "&6万圣南瓜灯"
+    price: 3.0
+
+  halloween_candy:
+    holiday: HALLOWEEN
+    material: GLOW_BERRIES
+    amount: 64
+    name: "&d万圣节糖果"
+    price: 6.0
+
+  # ==================== 新年商品 ====================
+  vip_permission:
+    holiday: NEW_YEAR
+    material: NAME_TAG
+    amount: 1
+    name: "&6&l新年快乐"
+    price: 10.0
